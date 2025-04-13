@@ -12,8 +12,16 @@ class CommentController extends Controller
      */
     public function index()
     {
+        $query = Comment::query();
+        if (request()->has('filter')) {
+            foreach (request()->input('filter') as $k => $v) {
+                $query->where($k, $v);
+            }
+        }
+
+        $data = $query->get();
         return response()->json([
-            'data' => Comment::all(),
+            'data' => $data,
         ]);
     }
 
