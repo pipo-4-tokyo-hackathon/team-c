@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth.system')->group(function () {
+//Route::middleware('auth.system')->group(function () {
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('comments', CommentController::class);
-});
+//});

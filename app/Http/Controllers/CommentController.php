@@ -22,7 +22,16 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $status = Comment::create([
+            'user_id' => $request->input('user_id'),
+            'project_id' => $request->input('project_id'),
+            'body' => $request->input('body'),
+            'status' => 'new',
+        ]);
+
+        return response()->json([
+            'status' => $status ? 'success' : 'failed',
+        ]);
     }
 
     /**
@@ -38,7 +47,13 @@ class CommentController extends Controller
      */
     public function update(Request $request, Comment $comment)
     {
-        //
+        $status = $comment->update([
+            'body' => $request->input('body'),
+        ]);
+
+        return response()->json([
+            'status' => $status ? 'success' : 'failed',
+        ]);
     }
 
     /**
