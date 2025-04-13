@@ -13,10 +13,8 @@ class CommentController extends Controller
     public function index()
     {
         $query = Comment::query();
-        if (request()->has('filter')) {
-            foreach (request()->input('filter') as $k => $v) {
-                $query->where($k, $v);
-            }
+        if (request()->has('project_id')) {
+            $query->where('project_id', request()->project_id);
         }
 
         $data = $query->get();
