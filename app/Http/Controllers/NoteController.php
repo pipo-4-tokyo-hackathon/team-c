@@ -14,10 +14,8 @@ class NoteController extends Controller
     {
         $query = Note::query();
 
-        if (request()->has('filter')) {
-            foreach (request()->input('filter') as $k => $v) {
-                $query->where($k, $v);
-            }
+        if (request()->has('comment_id')) {
+            $query->where('comment_id', request()->comment_id);
         }
 
         return response()->json([
