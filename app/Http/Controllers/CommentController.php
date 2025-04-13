@@ -32,7 +32,7 @@ class CommentController extends Controller
             'user_id' => $request->input('user_id'),
             'project_id' => $request->input('project_id'),
             'body' => $request->input('body'),
-            'status' => 'new',
+            'status' => 'active',
         ]);
 
         return response()->json([

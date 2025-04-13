@@ -32,7 +32,7 @@ class NoteController extends Controller
             'user_id' => $request->input('user_id'),
             'comment_id' => $request->input('comment_id'),
             'body' => $request->input('body'),
-            'status' => 'new',
+            'status' => 'active',
         ]);
 
         return response()->json([
