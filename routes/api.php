@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\ProjectController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -19,4 +20,5 @@ use Illuminate\Support\Facades\Route;
 //Route::middleware('auth.system')->group(function () {
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('comments', CommentController::class);
+    Route::apiResource('notes', NoteController::class);
 //});
