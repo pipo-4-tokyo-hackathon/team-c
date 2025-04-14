@@ -45,6 +45,14 @@ services:
     networks:
       - app-network
 
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+        - "1025:1025"  # SMTP
+        - "8025:8025"  # Web UI
+    networks:
+        - app-network
+
 #Docker Networks
 networks:
   app-network:
