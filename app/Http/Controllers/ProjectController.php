@@ -14,10 +14,11 @@ class ProjectController extends Controller
     public function index()
     {
         $query = Project::query();
-        if (request()->has('filter')) {
-            foreach (request()->input('filter') as $k => $v) {
-                $query->where($k, $v);
-            }
+        if (request()->has('tag')) {
+            $tag = request()->tag;
+            $query->whereHas('tags', function ($query) use ($tag) {
+                $query->where('tag', $tag);
+            });
         }
 
         $data = $query->get();
