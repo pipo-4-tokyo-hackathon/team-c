@@ -30,6 +30,7 @@ class NoteController extends Controller
     {
         $status = Note::create([
             'user_id' => $request->input('user_id'),
+            'user_fullname' => $request->input('user_fullname'),
             'comment_id' => $request->input('comment_id'),
             'body' => $request->input('body'),
             'status' => 'active',

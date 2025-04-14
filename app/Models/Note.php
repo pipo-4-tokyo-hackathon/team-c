@@ -12,6 +12,7 @@ class Note extends Model
     protected $fillable = [
         'comment_id',
         'user_id',
+        'user_fullname',
         'body',
         'status',
     ];

@@ -30,6 +30,7 @@ class CommentController extends Controller
     {
         $status = Comment::create([
             'user_id' => $request->input('user_id'),
+            'user_fullname' => $request->input('user_fullname'),
             'project_id' => $request->input('project_id'),
             'body' => $request->input('body'),
             'status' => 'active',
