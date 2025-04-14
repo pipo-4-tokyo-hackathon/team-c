@@ -24,4 +24,6 @@ use Illuminate\Support\Facades\Route;
     Route::apiResource('comments', CommentController::class);
     Route::apiResource('notes', NoteController::class);
     Route::apiResource('tags', TagController::class);
+    Route::get('/projects/{project}/summary', [ProjectController::class, 'generateSummary']);
+
 //});
