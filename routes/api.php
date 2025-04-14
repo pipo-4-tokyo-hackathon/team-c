@@ -3,6 +3,7 @@
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\TagController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -21,4 +22,5 @@ use Illuminate\Support\Facades\Route;
     Route::apiResource('projects', ProjectController::class);
     Route::apiResource('comments', CommentController::class);
     Route::apiResource('notes', NoteController::class);
+    Route::apiResource('tags', TagController::class);
 //});
