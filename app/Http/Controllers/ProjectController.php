@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Models\Project;
+use Illuminate\Support\Facades\Log;
 
 class ProjectController extends Controller
 {
@@ -13,6 +14,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
+        Log::info(json_encode(request()->all()));
         $query = Project::query();
         if (request()->has('tag')) {
             $tag = request()->tag;
