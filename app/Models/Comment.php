@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Comment extends Model
 {
@@ -16,4 +17,14 @@ class Comment extends Model
         'body',
         'status',
     ];
+
+    /**
+     * Получить заметки к комментарию
+     *
+     * @return HasMany
+     */
+    public function notes(): HasMany
+    {
+        return $this->hasMany(Note::class, 'comment_id', 'id');
+    }
 }

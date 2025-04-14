@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Models\Project;
+use Gemini\Enums\ModelType;
 use Illuminate\Support\Facades\Log;
+use Gemini\Laravel\Facades\Gemini;
 
 class ProjectController extends Controller
 {
@@ -59,5 +61,28 @@ class ProjectController extends Controller
     public function destroy(Project $project)
     {
         //
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function generateSummary(Project $project): void
+    {
+        $text = 'project title: ' . $project->title;
+        foreach ($project->comments as $comment){
+            $text .= 'comment of ' . $comment->user_fullname . ': ' . $comment->body . '/n';
+            if ($comment->notes) {
+                $text .= 'notes to previous comment: ';
+                foreach ($comment->notes as $note) {
+                    $text .= $note->user_fullname . ': ' . $note->body . '/n';
+                }
+            }
+        }
+        $result = Gemini::generativeModel(ModelType::GEMINI_FLASH)->generateContent(
+            'Build a short summary of 5-6 sentences of comments below /n' . $text
+        );
+
+        $project->summary = $result->text();
+        $project->save();
     }
 }
