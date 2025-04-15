@@ -25,6 +25,10 @@ class ProjectController extends Controller
             });
         }
 
+        if (request()->has('search')) {
+            $query->where('title', 'like', '%' . request()->search . '%');
+        }
+
         $data = $query->get();
         return response()->json([
             'data' => $data,
