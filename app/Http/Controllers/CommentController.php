@@ -13,12 +13,17 @@ class CommentController extends Controller
     public function index()
     {
         $query = Comment::query();
+        $order = 'desc';
         if (request()->has('project_id')) {
             $query->where('project_id', request()->project_id);
         }
 
+        if (request()->has('order')) {
+            $order = request()->order == 1 ? 'asc' : 'desc';
+        }
+
         return response()->json([
-            'data' => $query->orderBy('created_at', 'desc')->get(),
+            'data' => $query->orderBy('created_at', $order)->get(),
         ]);
     }
 
