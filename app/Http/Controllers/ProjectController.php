@@ -6,6 +6,7 @@ use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Models\Project;
 use Gemini\Enums\ModelType;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Gemini\Laravel\Facades\Gemini;
 
@@ -45,9 +46,15 @@ class ProjectController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(StoreProjectRequest $request)
+    public function store(
+//        StoreProjectRequest $request
+        Request $request
+    )
     {
-        //
+        Log::info(json_decode($request));
+        return response()->json([
+            'data' => 'test',
+        ]);
     }
 
     /**
