@@ -19,7 +19,7 @@ class NoteController extends Controller
         }
 
         return response()->json([
-            'data' => $query->get(),
+            'data' => $query->orderBy('created_at', 'desc')->get(),
         ]);
     }
 

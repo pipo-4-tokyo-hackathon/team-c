@@ -17,9 +17,8 @@ class CommentController extends Controller
             $query->where('project_id', request()->project_id);
         }
 
-        $data = $query->get();
         return response()->json([
-            'data' => $data,
+            'data' => $query->orderBy('created_at', 'desc')->get(),
         ]);
     }
 
