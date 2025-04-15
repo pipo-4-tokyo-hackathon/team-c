@@ -64,6 +64,34 @@ class CommentController extends Controller
     }
 
     /**
+     * Upvote a comment
+     */
+    public function upvote(Comment $comment)
+    {
+        $status = $comment->update([
+            'votes' => $comment->votes + 1,
+        ]);
+
+        return response()->json([
+            'status' => $status ? 'success' : 'failed',
+        ]);
+    }
+
+    /**
+     * Downvote a comment
+     */
+    public function downvote(Comment $comment)
+    {
+        $status = $comment->update([
+            'votes' => $comment->votes - 1,
+        ]);
+
+        return response()->json([
+            'status' => $status ? 'success' : 'failed',
+        ]);
+    }
+
+    /**
      * Remove the specified resource from storage.
      */
     public function destroy(Comment $comment)
