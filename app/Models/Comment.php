@@ -15,6 +15,7 @@ class Comment extends Model
         'user_id',
         'user_fullname',
         'body',
+        'votes',
         'status',
     ];
 
