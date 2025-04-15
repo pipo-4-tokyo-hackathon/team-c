@@ -29,6 +29,13 @@ class ProjectController extends Controller
             $query->where('title', 'like', '%' . request()->search . '%');
         }
 
+        if (request()->has('user_id')) {
+            $user_id = request()->user_id;
+            $query->whereHas('users', function ($query) use ($user_id) {
+                $query->where('user_id', $user_id);
+            });
+        }
+
         $data = $query->get();
         return response()->json([
             'data' => $data,
