@@ -31,6 +31,17 @@ class Project extends Model
     }
 
     /**
+     * Получить пользователей проекта
+     *
+     * @return HasManyThrough
+     */
+    public function users(): HasManyThrough
+    {
+        return $this->hasManyThrough(User::class, ProjectUser::class, 'project_id', 'id',
+            'id', 'user_id');
+    }
+
+    /**
      * Получить комментарии проекта
      *
      * @return HasMany
