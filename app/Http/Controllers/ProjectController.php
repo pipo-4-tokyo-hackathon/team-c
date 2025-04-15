@@ -6,6 +6,7 @@ use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Models\Project;
 use Gemini\Enums\ModelType;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Gemini\Laravel\Facades\Gemini;
 
@@ -66,8 +67,14 @@ class ProjectController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function generateSummary(Project $project): void
+    public function generateSummary(Request $request): void
     {
+        $validated = $request->validate([
+            'project_id' => 'integer',
+        ]);
+
+        $project = Project::find($validated['project_id']);
+
         $text = 'project title: ' . $project->title;
         foreach ($project->comments as $comment){
             $text .= 'comment of ' . $comment->user_fullname . ': ' . $comment->body . '/n';
