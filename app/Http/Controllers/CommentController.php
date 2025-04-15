@@ -22,6 +22,10 @@ class CommentController extends Controller
             $order = request()->order == 1 ? 'asc' : 'desc';
         }
 
+        if (request()->has('search')) {
+            $query->where('body', 'like', '%' . request()->search . '%');
+        }
+
         return response()->json([
             'data' => $query->orderBy('created_at', $order)->get(),
         ]);
