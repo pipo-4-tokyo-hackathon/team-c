@@ -37,7 +37,8 @@ class ProjectController extends Controller
             });
         }
 
-        $data = $query->get();
+        $data = $query->orderBy('status', 'desc')
+            ->orderBy('created_at')->get();
         return response()->json([
             'data' => $data,
         ]);

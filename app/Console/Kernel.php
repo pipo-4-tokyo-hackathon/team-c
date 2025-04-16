@@ -14,6 +14,8 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('reminder:send-optional')->everyMinute();
         $schedule->command('reminder:send-required')->everyFiveMinutes();
+//        $schedule->command('reminder:projects:set-status-to-old')->daily();
+        $schedule->command('reminder:projects:set-status-to-old')->everyFiveSeconds();
     }
 
     /**

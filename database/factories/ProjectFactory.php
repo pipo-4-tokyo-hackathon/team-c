@@ -21,7 +21,7 @@ class ProjectFactory extends Factory
             'description' => fake()->sentence,
             'summary' => fake()->text,
             'department_id' => fake()->numerify('###'),
-            'status' => 'open',
+            'status' => 'active',
         ];
     }
 }

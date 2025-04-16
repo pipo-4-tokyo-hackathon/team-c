@@ -12,7 +12,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        $query = Comment::query();
+        $query = Comment::query()->withCount('notes');
         $order = 'desc';
         if (request()->has('project_id')) {
             $query->where('project_id', request()->project_id);

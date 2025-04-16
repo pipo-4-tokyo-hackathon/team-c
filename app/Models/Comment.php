@@ -23,13 +23,10 @@ class Comment extends Model
     protected static function booted(): void
     {
         static::created(function (Comment $comment) {
-            $comment->project->updated_at = now();
-            $comment->project->save();
-        });
-
-        static::updated(function (Comment $comment) {
-            $comment->project->updated_at = now();
-            $comment->project->save();
+            $project = $comment->project;
+            $project->updated_at = now();
+            $project->status = 'active';
+            $project->save();
         });
     }
 
