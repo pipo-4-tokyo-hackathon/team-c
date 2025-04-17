@@ -98,7 +98,7 @@ class ProjectController extends Controller
             }
         }
         $result = Gemini::generativeModel(ModelType::GEMINI_FLASH)->generateContent(
-            'Build a short summary of 5-6 sentences of comments below on a language most of them were written in /n' . $text
+            'Build a short summary of 5-6 sentences of comments below in a language most of them were written in /n' . $text
         );
 
         $project->summary = $result->text();
