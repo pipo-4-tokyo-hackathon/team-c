@@ -102,6 +102,7 @@ class ProjectController extends Controller
         );
 
         $project->summary = $result->text();
+        $project->status = 'active';
         $project->save();
     }
 }
