@@ -1,0 +1,40 @@
+1,1,23,"Called 12 leads from Chicago region. 3 interested, 1 confirmed meeting.",active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,2
+2,1,24,Followed up on email campaign responses. 5 out of 30 replied positively.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Carlos Rivera,3
+3,1,23,Updated lead statuses in CRM. Several duplicates found.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,2
+4,1,25,Reviewed sales scripts. Suggested minor changes for clarity.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Fatima Khan,1
+5,1,26,Created dashboard for tracking weekly conversion metrics.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Liam O'Connor,4
+6,1,23,Meeting with Midwest rep scheduled for Friday.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,1
+7,1,24,Prepped slide deck for Monday’s internal review.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Carlos Rivera,2
+8,1,25,Reviewed training materials for new SDRs.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Fatima Khan,1
+9,1,26,Refined conversion tracker to filter by rep region.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Liam O'Connor,3
+10,1,23,Updated process doc with new call cadence recommendation.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,4
+11,2,25,Met with Orion Ltd. to review contract details.,active,2025-04-03 18:34:14,2025-04-18 02:39:01,Fatima Khan,3
+12,2,26,Built shared onboarding checklist template.,active,2025-04-05 18:34:14,2025-04-18 00:54:05,Liam O'Connor,2
+13,2,27,Updated FAQ based on client questions.,active,2025-04-11 18:34:14,2025-04-17 18:34:14,Grace Chen,3
+14,2,28,Compiled feedback from first onboarding call.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Elijah Johnson,1
+15,2,25,Held Q&A session with Acme Corp’s legal team.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Fatima Khan,4
+16,2,26,Automated progress status email script.,active,2025-04-06 18:34:14,2025-04-17 18:34:14,Liam O'Connor,2
+17,2,27,Asked marketing to review welcome guide tone.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Grace Chen,1
+18,2,28,Met with sales to ensure aligned messaging.,active,2025-04-03 18:34:14,2025-04-17 18:34:14,Elijah Johnson,2
+19,2,25,Updated client contact sheets.,active,2025-04-17 18:34:14,2025-04-18 00:30:15,Fatima Khan,2
+20,2,27,Follow-up email sent to delayed onboarding clients.,active,2025-04-17 18:34:14,2025-04-18 00:43:46,Grace Chen,4
+21,3,23,Identified missing records in January-February range.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,2
+22,3,24,Documented data cleansing rules.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Carlos Rivera,3
+23,3,27,Created cleanup script for legacy tags.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Grace Chen,2
+24,3,28,Met with Salesforce consultant for setup guidance.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Elijah Johnson,4
+25,3,23,Created fallback plan for failed imports.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,2
+26,3,24,Addressed email sync issues with support.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Carlos Rivera,1
+27,3,27,Removed deprecated custom fields.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Grace Chen,3
+28,3,28,Documented backup process pre-cutover.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Elijah Johnson,2
+29,3,23,Sent go-live announcement.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Samantha Lee,1
+30,3,27,Confirmed all integrations post-launch.,active,2025-04-17 18:34:14,2025-04-17 18:34:14,Grace Chen,4
+31,4,1,ブランド戦略ミーティングを開催しました。SEOに重点を置いたキーワード選定が進行中。,active,2025-04-17 09:55:01,2025-04-17 09:55:01,松本 佳子,3
+32,4,2,コンテンツマーケティングのキャンペーン計画を提出しました。初期案は順調に進んでいます。,active,2025-04-17 09:55:01,2025-04-17 09:55:01,木村 剛,2
+33,4,3,オンライン広告用のバナー素材が完成しました。今週末にテスト配信を行う予定です。,active,2025-04-17 09:55:01,2025-04-17 09:55:01,高橋 直子,1
+34,4,1,SEOの初期分析を完了しました。効果が出るまで数週間かかりそうです。,active,2025-04-17 09:55:01,2025-04-17 09:55:01,松本 佳子,2
+35,4,2,コンテンツブログの記事が3本完成。来週から広告キャンペーンに使う予定です。,active,2025-04-17 09:55:01,2025-04-17 09:55:01,木村 剛,0
+36,5,1,市場調査の計画が完成しました。ターゲットセグメントの特定作業を今週中に始めます。,active,2025-04-17 09:59:35,2025-04-17 09:59:35,佐々木 美沙,2
+37,5,2,アンケート調査の設計が終了し、次のステップはターゲット市場に送信することです。,active,2025-04-17 09:59:35,2025-04-17 09:59:35,山田 優子,1
+38,5,3,市場調査の初期結果を収集しました。次回ミーティングで結果をレビューします。,active,2025-04-17 09:59:35,2025-04-17 09:59:35,中村 俊介,3
+39,5,1,競合調査も開始しました。どの競合が最もシェアを持っているか調査しています。,active,2025-04-17 09:59:35,2025-04-17 09:59:35,佐々木 美沙,1
+40,5,2,顧客の声を反映させるために、次の調査にはオフライン調査も組み込む予定です。,active,2025-04-17 09:59:35,2025-04-17 09:59:35,山田 優子,0

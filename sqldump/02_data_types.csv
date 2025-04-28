@@ -1,0 +1,5 @@
+1,users,users,User,Users,voyager-person,TCG\Voyager\Models\User,TCG\Voyager\Policies\UserPolicy,TCG\Voyager\Http\Controllers\VoyagerUserController,"",1,0,,2025-04-17 08:05:21,2025-04-17 08:05:21
+2,menus,menus,Menu,Menus,voyager-list,TCG\Voyager\Models\Menu,,"","",1,0,,2025-04-17 08:05:21,2025-04-17 08:05:21
+3,roles,roles,Role,Roles,voyager-lock,TCG\Voyager\Models\Role,,TCG\Voyager\Http\Controllers\VoyagerRoleController,"",1,0,,2025-04-17 08:05:21,2025-04-17 08:05:21
+4,departments,departments,Department,Departments,,App\Models\Department,,,,1,0,"{""order_column"":null,""order_display_column"":null,""order_direction"":""asc"",""default_search_key"":null}",2025-04-17 15:58:30,2025-04-17 15:58:30
+5,projects,projects,Project,Projects,,App\Models\Project,,,,1,0,"{""order_column"":null,""order_display_column"":null,""order_direction"":""asc"",""default_search_key"":null,""scope"":null}",2025-04-17 16:00:01,2025-04-17 16:05:22
